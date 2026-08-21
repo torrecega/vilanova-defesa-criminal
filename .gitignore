@@ -10,3 +10,6 @@ desktop.ini
 
 # dependências, caso alguma ferramenta local crie
 node_modules/
+
+# gerações brutas ficam fora do repositório (o processado vive em site/assets)
+imagens/

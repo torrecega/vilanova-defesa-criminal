@@ -402,7 +402,7 @@ footer small{display:block;max-width:74ch;margin-top:26px;font-size:.78rem;line-
   .stage{position:relative}
   .bands,.ring,.chev,.flash{display:none}
   .poster{background-image:none !important}
-  .poster-end{opacity:1;background-image:url('assets/hero-still.svg')}
+  .poster-end{opacity:1;background-image:url('assets/hero-ending.jpg')}
   .static-hero{display:flex}
 }
 
@@ -680,9 +680,10 @@ var poster  = document.getElementById('poster');
 var flashEl = document.getElementById('flash');
 var navEl   = document.getElementById('nav');
 
-var POSTER_URL = 'assets/hero-poster.svg';
+var POSTER_URL = 'assets/hero-poster.jpg';
+var ENDING_URL = 'assets/hero-ending.jpg';
 var VIDEO_URL  = 'assets/hero-scrub.mp4';
-var VIDEO_BYTES = 6000000;
+var VIDEO_BYTES = 1931535;
 
 var clamp = function(v,lo,hi){ return Math.min(hi, Math.max(lo, v)); };
 var smoothstep = function(p,e0,e1){ var t = clamp((p-e0)/(e1-e0),0,1); return t*t*(3-2*t); };
@@ -846,6 +847,8 @@ var heroInit = false;
 function initHeroOnce(){
   if(heroInit) return; heroInit = true;
   poster.style.backgroundImage = "url('" + POSTER_URL + "')";
+  // the ending frame backs the crossfade when the video is missing, on desktop too
+  document.getElementById('posterEnd').style.backgroundImage = "url('" + ENDING_URL + "')";
   var started = false;
   function start(){ if(started) return; started = true; loadHeroBlob().catch(failVideo); }
   var img = new Image();
