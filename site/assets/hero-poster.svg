@@ -1,0 +1,111 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1080" width="1920" height="1080" role="img" aria-label="Corredor de concreto na madrugada">
+  <defs>
+    <linearGradient id="wl" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#070A0C"/>
+      <stop offset="0.55" stop-color="#0E1319"/>
+      <stop offset="1" stop-color="#1E262E"/>
+    </linearGradient>
+    <linearGradient id="wr" x1="1" y1="0" x2="0" y2="0">
+      <stop offset="0" stop-color="#070A0C"/>
+      <stop offset="0.55" stop-color="#0E1319"/>
+      <stop offset="1" stop-color="#1E262E"/>
+    </linearGradient>
+    <linearGradient id="cl" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#05070A"/>
+      <stop offset="1" stop-color="#151C23"/>
+    </linearGradient>
+    <linearGradient id="fl" x1="0" y1="1" x2="0" y2="0">
+      <stop offset="0" stop-color="#040608"/>
+      <stop offset="0.6" stop-color="#0B1116"/>
+      <stop offset="1" stop-color="#1A222A"/>
+    </linearGradient>
+    <radialGradient id="door" cx="0.5" cy="0.5" r="0.72">
+      <stop offset="0" stop-color="#C3D6E4"/>
+      <stop offset="0.45" stop-color="#8299AC"/>
+      <stop offset="1" stop-color="#3C4C5C"/>
+    </radialGradient>
+    <radialGradient id="spill" cx="0.5" cy="0.5" r="0.5">
+      <stop offset="0" stop-color="#9FBACE" stop-opacity="0.5"/>
+      <stop offset="0.4" stop-color="#6D8598" stop-opacity="0.2"/>
+      <stop offset="1" stop-color="#6D8598" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="strip" cx="0.5" cy="0.5" r="0.5">
+      <stop offset="0" stop-color="#BDD2E0" stop-opacity="0.34"/>
+      <stop offset="1" stop-color="#BDD2E0" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="vig" cx="0.5" cy="0.46" r="0.78">
+      <stop offset="0.3" stop-color="#000000" stop-opacity="0"/>
+      <stop offset="1" stop-color="#000000" stop-opacity="0.82"/>
+    </radialGradient>
+    <linearGradient id="refl" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#8CA6BA" stop-opacity="0.28"/>
+      <stop offset="1" stop-color="#8CA6BA" stop-opacity="0"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="1920" height="1080" fill="#06080A"/>
+
+  <!-- corridor shell -->
+  <polygon points="0,0 1920,0 1090,400 830,400" fill="url(#cl)"/>
+  <polygon points="0,1080 1920,1080 1090,640 830,640" fill="url(#fl)"/>
+  <polygon points="0,0 830,400 830,640 0,1080" fill="url(#wl)"/>
+  <polygon points="1920,0 1090,400 1090,640 1920,1080" fill="url(#wr)"/>
+
+  <!-- concrete panel seams, receding -->
+  <g stroke="#2A343D" stroke-width="1.5" opacity="0.34" fill="none">
+    <path d="M0 232 L830 434"/>
+    <path d="M0 848 L830 606"/>
+    <path d="M1920 232 L1090 434"/>
+    <path d="M1920 848 L1090 606"/>
+    <path d="M300 128 L300 952"/>
+    <path d="M560 262 L560 818"/>
+    <path d="M712 340 L712 740"/>
+    <path d="M1620 128 L1620 952"/>
+    <path d="M1360 262 L1360 818"/>
+    <path d="M1208 340 L1208 740"/>
+  </g>
+
+  <!-- ceiling light strips, receding toward the vanishing point -->
+  <g>
+    <ellipse cx="960" cy="150" rx="360" ry="80" fill="url(#strip)"/>
+    <polygon points="700,132 1220,132 1160,170 760,170" fill="#C8DCEA" opacity="0.5"/>
+    <ellipse cx="960" cy="292" rx="230" ry="52" fill="url(#strip)"/>
+    <polygon points="806,282 1114,282 1082,306 838,306" fill="#C8DCEA" opacity="0.4"/>
+    <ellipse cx="960" cy="372" rx="150" ry="34" fill="url(#strip)"/>
+    <polygon points="866,366 1054,366 1036,382 884,382" fill="#C8DCEA" opacity="0.3"/>
+  </g>
+
+  <!-- light pools on the floor beneath each strip -->
+  <g>
+    <ellipse cx="960" cy="1000" rx="520" ry="118" fill="url(#strip)" opacity="0.7"/>
+    <ellipse cx="960" cy="810" rx="330" ry="70" fill="url(#strip)" opacity="0.6"/>
+    <ellipse cx="960" cy="702" rx="200" ry="42" fill="url(#strip)" opacity="0.5"/>
+  </g>
+
+  <!-- the far doorway, the destination -->
+  <ellipse cx="960" cy="520" rx="470" ry="380" fill="url(#spill)"/>
+  <rect x="830" y="400" width="260" height="240" fill="url(#door)"/>
+  <rect x="830" y="400" width="260" height="240" fill="none" stroke="#D6E5F0" stroke-opacity="0.35" stroke-width="2"/>
+  <rect x="884" y="446" width="152" height="148" fill="#E4EFF7" opacity="0.5"/>
+  <rect x="830" y="636" width="260" height="120" fill="url(#refl)"/>
+
+  <!-- dust in the light -->
+  <g fill="#D8E7F2">
+    <circle cx="742" cy="404" r="2.4" opacity="0.24"/>
+    <circle cx="828" cy="322" r="1.8" opacity="0.18"/>
+    <circle cx="1042" cy="366" r="2.1" opacity="0.2"/>
+    <circle cx="1136" cy="470" r="1.6" opacity="0.16"/>
+    <circle cx="690" cy="546" r="2.8" opacity="0.14"/>
+    <circle cx="1218" cy="590" r="2.2" opacity="0.13"/>
+    <circle cx="880" cy="248" r="1.4" opacity="0.2"/>
+    <circle cx="1004" cy="214" r="2" opacity="0.15"/>
+    <circle cx="612" cy="700" r="3" opacity="0.1"/>
+    <circle cx="1320" cy="742" r="2.6" opacity="0.09"/>
+    <circle cx="960" cy="612" r="1.5" opacity="0.22"/>
+    <circle cx="1090" cy="288" r="1.7" opacity="0.14"/>
+    <circle cx="806" cy="668" r="2" opacity="0.12"/>
+    <circle cx="1168" cy="352" r="1.3" opacity="0.17"/>
+  </g>
+
+  <rect width="1920" height="1080" fill="url(#vig)"/>
+</svg>

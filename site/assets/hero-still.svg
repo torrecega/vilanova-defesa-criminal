@@ -1,0 +1,89 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1080" width="1920" height="1080" role="img" aria-label="Sala acesa com a luminaria ligada e a cadeira puxada">
+  <defs>
+    <linearGradient id="room" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#0A0D11"/>
+      <stop offset="0.42" stop-color="#141A20"/>
+      <stop offset="1" stop-color="#1D242B"/>
+    </linearGradient>
+    <radialGradient id="glow" cx="0.5" cy="0.5" r="0.5">
+      <stop offset="0" stop-color="#F6E4C6" stop-opacity="0.9"/>
+      <stop offset="0.35" stop-color="#E0C296" stop-opacity="0.34"/>
+      <stop offset="1" stop-color="#C9A877" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="cone" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#F4E1BE" stop-opacity="0.4"/>
+      <stop offset="1" stop-color="#F4E1BE" stop-opacity="0"/>
+    </linearGradient>
+    <linearGradient id="desk" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#3A3226"/>
+      <stop offset="0.12" stop-color="#241F19"/>
+      <stop offset="1" stop-color="#0F1215"/>
+    </linearGradient>
+    <linearGradient id="wallwash" x1="0" y1="1" x2="0" y2="0">
+      <stop offset="0" stop-color="#C9A877" stop-opacity="0.16"/>
+      <stop offset="1" stop-color="#C9A877" stop-opacity="0"/>
+    </linearGradient>
+    <radialGradient id="vig2" cx="0.5" cy="0.5" r="0.76">
+      <stop offset="0.34" stop-color="#000000" stop-opacity="0"/>
+      <stop offset="1" stop-color="#000000" stop-opacity="0.78"/>
+    </radialGradient>
+  </defs>
+
+  <rect width="1920" height="1080" fill="url(#room)"/>
+
+  <!-- back wall seam and skirting, quiet architecture -->
+  <g stroke="#2C343C" stroke-width="1.5" opacity="0.3" fill="none">
+    <path d="M0 742 L1920 742"/>
+    <path d="M348 176 L348 742"/>
+    <path d="M1572 176 L1572 742"/>
+  </g>
+  <rect x="0" y="560" width="1920" height="182" fill="url(#wallwash)"/>
+
+  <!-- the lamp cone -->
+  <polygon points="1236,606 1300,606 1520,846 986,846" fill="url(#cone)"/>
+
+  <!-- warm pool washing the desk and the floor -->
+  <ellipse cx="1250" cy="838" rx="520" ry="190" fill="url(#glow)" opacity="0.55"/>
+
+  <!-- the desk -->
+  <rect x="520" y="826" width="1080" height="26" fill="url(#desk)"/>
+  <rect x="520" y="826" width="1080" height="4" fill="#E8D3AE" opacity="0.42"/>
+  <rect x="556" y="852" width="16" height="176" fill="#0D1013"/>
+  <rect x="1548" y="852" width="16" height="176" fill="#0D1013"/>
+
+  <!-- papers catching the light -->
+  <rect x="1118" y="800" width="196" height="28" fill="#EFE4CD" opacity="0.72" transform="rotate(-2 1216 814)"/>
+  <rect x="1176" y="792" width="168" height="24" fill="#F5EDDC" opacity="0.6" transform="rotate(1.4 1260 804)"/>
+
+  <!-- the lamp -->
+  <rect x="1258" y="560" width="8" height="52" fill="#1A1E22"/>
+  <polygon points="1214,556 1310,556 1330,606 1194,606" fill="#22282E"/>
+  <polygon points="1200,602 1324,602 1324,608 1200,608" fill="#F7E7C6" opacity="0.85"/>
+  <ellipse cx="1262" cy="612" rx="86" ry="26" fill="url(#glow)"/>
+
+  <!-- the chair, pulled out and waiting -->
+  <g fill="#12161A">
+    <rect x="628" y="676" width="180" height="18" rx="4" transform="rotate(-6 718 685)"/>
+    <rect x="628" y="722" width="180" height="14" rx="4" transform="rotate(-6 718 729)"/>
+    <rect x="632" y="676" width="14" height="132" transform="rotate(-6 639 742)"/>
+    <rect x="792" y="676" width="14" height="132" transform="rotate(-6 799 742)"/>
+    <rect x="612" y="800" width="212" height="20" rx="6"/>
+    <rect x="626" y="820" width="12" height="150"/>
+    <rect x="798" y="820" width="12" height="150"/>
+  </g>
+  <rect x="612" y="800" width="212" height="4" fill="#C6AE86" opacity="0.3"/>
+
+  <!-- dust drifting in the lamp light -->
+  <g fill="#F4E6CC">
+    <circle cx="1188" cy="700" r="2.2" opacity="0.24"/>
+    <circle cx="1292" cy="664" r="1.7" opacity="0.2"/>
+    <circle cx="1358" cy="756" r="2.5" opacity="0.16"/>
+    <circle cx="1104" cy="762" r="1.9" opacity="0.18"/>
+    <circle cx="1246" cy="736" r="1.4" opacity="0.26"/>
+    <circle cx="1420" cy="700" r="2" opacity="0.12"/>
+    <circle cx="1042" cy="700" r="1.6" opacity="0.13"/>
+    <circle cx="1330" cy="620" r="1.5" opacity="0.2"/>
+  </g>
+
+  <rect width="1920" height="1080" fill="url(#vig2)"/>
+</svg>

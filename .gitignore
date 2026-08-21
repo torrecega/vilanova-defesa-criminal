@@ -1,0 +1,12 @@
+# arquivos brutos e de trabalho nunca entram na pasta que vai para o ar
+raw/
+*.mov
+*.mkv
+
+# sistema
+Thumbs.db
+.DS_Store
+desktop.ini
+
+# dependências, caso alguma ferramenta local crie
+node_modules/
